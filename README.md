@@ -1,37 +1,71 @@
-# pkg-placeholder
+# koa-redirect-and-benchmark
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![bundle][bundle-src]][bundle-href]
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-_description_
+About Produce redirect and benchmark
 
-> **Note**:
-> Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
+## Endpoints
 
-## Sponsors
+Endpoints are divided in three parts.
 
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
+### Redirect
+
+- / - GET - Root getting redirected to /posts
+
+### Posts
+
+- /posts - GET - Get all posts
+- /post/:id - GET - Show a post
+- /post/:id - POST - Create a post
+
+### Benchmark
+
+- /sync - GET - Snyc route
+- /async - GET - Async route
+
+## Setup
+
+To clone:
+
+```sh
+git clone https://github.com/rjoydip/oss-issue-solving/git
+cd oss-issue-solving/hono/3271
+```
+
+To install dependencies:
+
+```sh
+bun install
+```
+
+To run:
+
+```sh
+bun start
+```
+
+Server will running on port [http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+To test:
+
+```sh
+bun test
+```
+
+To benchmark
+
+```sh
+bun bench
+```
 
 ## License
 
-[MIT](./LICENSE) License © 2024-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2024-PRESENT [Joydip Roy](https://github.com/rjoydip)
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/pkg-placeholder
-[npm-downloads-src]: https://img.shields.io/npm/dm/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/pkg-placeholder
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=pkg-placeholder
-[license-src]: https://img.shields.io/github/license/antfu/pkg-placeholder.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/pkg-placeholder/blob/main/LICENSE
+[license-src]: https://img.shields.io/github/license/rjoydip/koa-redirect-and-benchmark.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/rjoydip/koa-redirect-and-benchmark/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/pkg-placeholder
+[jsdocs-href]: https://www.jsdocs.io/package/koa-redirect-and-benchmark

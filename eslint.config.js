@@ -5,4 +5,10 @@ export default antfu(
   {
     type: 'lib',
   },
+  {
+    ignores: [
+      'LICENSE',
+      'bun.lockb',
+    ],
+  },
 )
