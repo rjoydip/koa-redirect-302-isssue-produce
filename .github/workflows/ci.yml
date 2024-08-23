@@ -18,8 +18,8 @@ jobs:
         uses: oven-sh/setup-bun@v1
       - name: Install dependencies
         run: bun install
-      - run: bun lint
-      - run: bun typecheck
+      - run: bun run lint
+      - run: bun run typecheck
 
   test:
     runs-on: ${{ matrix.os }}
@@ -35,5 +35,5 @@ jobs:
         uses: oven-sh/setup-bun@v1
       - name: Install dependencies
         run: bun install
-      - run: bun build
-      - run: bun test
+      - run: bun run build
+      - run: bun run test
